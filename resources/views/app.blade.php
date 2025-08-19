@@ -6,6 +6,8 @@
 
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
+            /*
+
             (function() {
                 const appearance = '{{ $appearance ?? "system" }}';
 
@@ -17,16 +19,17 @@
                     }
                 }
             })();
+            */
         </script>
 
         {{-- Inline style to set the HTML background color based on our theme in app.css --}}
         <style>
             html {
-                background-color: oklch(1 0 0);
+                background-color: oklch(95.4% 0.048 84.2);
             }
 
             html.dark {
-                background-color: oklch(0.145 0 0);
+                background-color: oklch(95.4% 0.048 84.2);
             }
         </style>
 

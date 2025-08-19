@@ -17,6 +17,7 @@ export default function Dashboard() {
             <Head title="Dashboard" >
             </Head>
 
+
             <div className="flex flex-col p-4 gap-4">
                 <div>
                     <h1>Emotional wellbeing</h1>
