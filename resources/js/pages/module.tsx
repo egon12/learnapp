@@ -7,11 +7,11 @@ import ModuleSelection from '@/components/module/module-selection';
 const breadcrumbs: BreadcrumbItem[] = [
     {
         title: 'Module',
-        href: '/dashboard',
+        href: '/module',
     },
 ];
 
-export default function Dashboard() {
+export default function Module() {
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Dashboard" />
