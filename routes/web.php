@@ -32,9 +32,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
             return Inertia::render('module/impostor/page_01_introduction');
         })->name('impostor.introduction');
 
-        Route::get('page_02_test', function () {
-            return Inertia::render('module/impostor/page_02_test');
-        })->name('impostor.test');
+        Route::get('page_02', function () {
+            return Inertia::render('module/impostor/page_02');
+        })->name('impostor.page_02');
 
         Route::get('page_03_summary_test', function () {
             return Inertia::render('module/impostor/page_03_summary_test');

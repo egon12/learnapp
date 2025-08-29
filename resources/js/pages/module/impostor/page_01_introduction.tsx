@@ -3,6 +3,7 @@ import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
 import { Head, Link } from '@inertiajs/react';
 import impostor_image_01 from '@/assets/impostor_image_01.jpg';
+import nextArrow from '@/pages/module/impostor/assets/lessonNextArrow.svg';
 
 const breadcrumbs: BreadcrumbItem[] = [
   {
@@ -56,7 +57,7 @@ export default function ImposterSyndromeIntroduction() {
                 aspectRatio: "16 / 9",
                 border: "0",
             }}
-            src="https://www.youtube.com/embed/0Wi29WkgFTc" title="SMART Goals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            src="https://www.youtube.com/embed/0Wi29WkgFTc" title="SMART Goals" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             <div className="p-6 rounded-lg bg-white/80 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700">
               <h3 className="text-xl font-semibold mb-3 text-neutral-900 dark:text-neutral-100">What is a SMART goal?</h3>
@@ -79,11 +80,11 @@ And that's how you set a SMART goal!
           <div className="relative z-10 flex justify-between mt-8">
             <div></div>
             <Link
-              href={route('lifehack.test')}
-              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+              href="/module/impostor/page_02"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg shadow-md transition-colors duration-300 flex items-center"
               as="button"
             >
-              Next: Lifehack Test →
+              Next: What is impostor syndrome? <img src={nextArrow} className="ml-2" />
             </Link>
           </div>
         </div>
